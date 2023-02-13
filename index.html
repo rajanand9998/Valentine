@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.webp">
+</head>
+<body>
+
+  <canvas id="Canvas"></canvas>
+
+    <nav>
+        <img class="big" src="Screenshot_2023-02-08_at_7.14.08_PM-removebg-preview.png" alt="">
+        <img class="small" src="heart.png" alt="">
+        <img class="right" src="heart.png" alt="">
+        <h1>Happy Valentine's Day <br> ...❤️</h1>
+    </nav>
+
+
+     <!--------- Audio Player ------------>
+     <div class="song">
+        <h1>Click here → </h1>
+        <button id="pausePlay">Play</button>
+        <audio id="music" src="dandelion.mp3"></audio>
+        
+          <script>
+            var audio = document.getElementById("music");
+            var pausePlay = document.getElementById("pausePlay");
+           pausePlay.addEventListener("click", function() {
+            if (audio.paused) {
+            audio.play();
+           pausePlay.innerHTML = "Pause";
+           } else {
+           audio.pause();
+            pausePlay.innerHTML = "Play";
+           }
+           });
+
+          </script>
+     </div>
+    
+
+     <!---------- Creating main bar --------->
+     <div class="main">
+       <img src="1.jpg">
+       <div class="text">
+        <h1>Chinkli, Chinklu</h1>
+        <p> Being with you makes everything better. You make all the bad things go away and good things even better.
+       </div>
+     </div>
+     
+     <div class="main">
+        <img src="2.jpg" alt="">
+        <div class="text">
+         <h1>Princess here!!!</h1>
+         <p> "I choose you and you'll always be my first choice"
+         </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <img src="3.jpg" alt="">
+        <div class="text">
+         <h1>Little cutiee </h1>
+         <p>"I promise to support you, comfort you and will do everything in my power to make sure you are always safe, happy and loved."
+         </p>
+        </div>
+      </div>
+     <!-------- Creating a last bar -------->
+     
+     <div class="last">
+        <img src="happy-valentine-s-day-greeting-card-cover-template-heart-frame-with-label-heart-consisting-multitude-hearts-with-space-text-illustration_257312-213.avif" alt="">
+     </div>
+     
+<div class="text">
+  <h4>Created with 💞 by Anand @Feb 2023</h4>
+</div>
+    
+     <script src="script.js"></script>
+
+</body>
+</html>
